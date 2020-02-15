@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="Escriba una Frase:" />
+
+    <EditText
+        android:id="@+id/txtFrase"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:background="@drawable/shape"
+        android:text="" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdInterna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo memoria INTERNA" />
+
+        <RadioButton
+            android:id="@+id/rdExterna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Archivo memoria EXTERNA" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:textColor="#000000"
+        android:text="Nombre del archivo:" />
+
+    <EditText
+        android:id="@+id/txtArchivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:background="@drawable/shape"
+        android:hint="documento1.txt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_buttons"
+            android:layout_weight="1"
+
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/btnAbrir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_buttons"
+            android:text="abrir" />
+    </LinearLayout>
+</LinearLayout>
